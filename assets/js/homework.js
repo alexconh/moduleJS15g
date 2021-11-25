@@ -29,6 +29,7 @@ switch (day){
         console.log(day +" es el dia 3")
     break;
     case 'miercoles': 
+    case 'miércoles': 
         console.log(day +" es el dia 4")
     break;
     case 'jueves': 
@@ -41,7 +42,7 @@ switch (day){
         console.log(day +" es el dia 7")
     break;
     default: 
-        console.log(day +" no es un dia valido")
+        console.error(day +" no es un dia valido")
     break;
 }
 /**
