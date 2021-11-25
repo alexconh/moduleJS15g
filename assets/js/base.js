@@ -1,5 +1,5 @@
 // let degrees = parseInt(prompt("Ingresa la temperatura actual en grados celsius"))
-// !isNaN(degrees) ? alert("La temperatura en grados farenheit es " + ((degrees*9/5)+32)) : alert("El valor que ingresaste no es valido")
+// !isNaN(degrees) ? alert("La temperatura en grados farenheit es " + ((degrees*9/5)+32)) : alert("El valor que ingresastegit no es valido")
 
 const value1 = parseInt(prompt("Dame el primer valor numérico"))
 const value2 = parseInt(prompt("Dame el segundo valor numérico"))
