@@ -1,30 +1,38 @@
-let day = prompt("Escribe que día es hoy")
-day = day.toLowerCase()
-switch (day){
-    case 'domingo':
-        console.log(day + " es el dia 1")
-    break;
-    case 'lunes': 
-        console.log(day +" es el dia 2")
-    break;
-    case 'martes': 
-        console.log(day +" es el dia 3")
-    break;
-    case 'miercoles': 
-    case 'miércoles': 
-        console.log(day +" es el dia 4")
-    break;
-    case 'jueves': 
-        console.log(day +" es el dia 5")
-    break;
-    case 'viernes': 
-        console.log(day +" es el dia 6")    
-    break;
-    case 'sabado':
-    case 'sábado': 
-        console.log(day +" es el dia 7")
-    break;
-    default: 
-        console.error(day +" no es un dia valido")
-    break;
+// for solution
+
+// const word = prompt('Ingresa una palabra o frase')
+// let reversedWord = ''
+// let aux = ''
+// if(isNaN(word) == true && word != ''){
+//     aux = word.toLowerCase().trim().replace(' ','').replace('á','a').replace('é','e').replace('í','i').replace('ó','o').replace('ú','u')
+//     for(let i = aux.length - 1; i >= 0; i--){
+//         reversedWord = reversedWord.concat(aux[i])
+//     }
+//     reversedWord === aux ? console.log(`${word.trim()} es un palindromo`) : console.log(`${word.trim()} no es un palindromo`)
+// } else {
+//     console.error('Debes ingresar una palabra o frase')
+// }
+
+// while solution 
+
+// const word = prompt('Ingresa una palabra o frase')
+// let reversedWord = ''
+// let aux = ''
+// if(isNaN(word) == true && word != ''){
+//     aux = word.toLowerCase().trim().replace(' ','').replace('á','a').replace('é','e').replace('í','i').replace('ó','o').replace('ú','u')
+//     let i = aux.length - 1
+//     while(i >= 0){
+//         reversedWord = reversedWord.concat(aux[i])
+//         i --
+//     }
+//     reversedWord === aux ? console.log(`${word.trim()} es un palindromo`) : console.log(`${word.trim()} no es un palindromo`)
+// } else {
+//     console.error('Debes ingresar una palabra o frase')
+// }
+
+// multiples of 3 and 5
+let suma = 0
+for(let i = 1; i<101; i++){
+    i % 3 == 0 ? suma += i : i % 5 == 0 ? suma += i : null 
 }
+console.log(`La suma de los múltiplos de 3 y 5 contenidos entre el 1 y el 100 es igual a ${suma}`)
